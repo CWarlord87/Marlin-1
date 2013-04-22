@@ -190,7 +190,7 @@
 //if PREVENT_DANGEROUS_EXTRUDE is on, you can still disable (uncomment) very long bits of extrusion separately.
 #define PREVENT_LENGTHY_EXTRUDE
 
-#define EXTRUDE_MINTEMP 170
+#define EXTRUDE_MINTEMP 160
 #define EXTRUDE_MAXLENGTH (X_MAX_LENGTH+Y_MAX_LENGTH) //prevent extrusion of very large distances.
 
 //===========================================================================
@@ -258,7 +258,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // Travel limits after homing
 #define X_MAX_POS 180
 #define X_MIN_POS 0
-#define Y_MAX_POS 180
+#define Y_MAX_POS 185
 #define Y_MIN_POS 0
 #define Z_MAX_POS 95
 #define Z_MIN_POS 0
@@ -282,7 +282,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.80,2302.6044812598,3.3995843954}  // default steps per unit for ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.80,2302.6044812598,3.3995843954}  // default steps per unit
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,75,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
