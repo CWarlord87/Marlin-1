@@ -284,7 +284,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.80,2302.6044812598,3.3995843954}  // default steps per unit for ultimaker
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {1000,1000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_MAX_ACCELERATION      {1000,1000,75,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          1000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  1000   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
@@ -297,7 +297,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instanteneously)
 #define DEFAULT_XYJERK                15.0    // (mm/sec)
-#define DEFAULT_ZJERK                 0.4     // (mm/sec)
+#define DEFAULT_ZJERK                 0.2     // (mm/sec)
 #define DEFAULT_EJERK                 5.0    // (mm/sec)
 
 //===========================================================================
